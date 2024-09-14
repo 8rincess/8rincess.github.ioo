@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc; /* Light beige background */
+    color: #5d4037; /* Warm brown text */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d2b48c; /* Tan header background */
+    color: #fff; /* White text for the header */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f5f5dc; /* Light beige hover */
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    background-color: #fff; /* White background for articles */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 1 65%; /* Takes 65% of the width */
+}
+
+article header h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #8b4513; /* Darker brown for article titles */
+}
+
+article header h3 {
+    font-size: 1em;
+    color: #5d4037;
+}
+
+article p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    color: #8b4513;
+    border-left: 5px solid #d2b48c; /* Tan border for quotes */
+    padding-left: 10px;
+}
+
+cite {
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+    color: #a0522d; /* Sienna for citation text */
+}
+
+article footer {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #d2b48c;
+}
+
+article footer h2,
+article footer h3 {
+    margin: 10px 0;
+    color: #8b4513;
+}
+
+article footer a {
+    text-decoration: none;
+    color: #d2691e; /* Chocolate color for links */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+article footer a:hover {
+    color: #a0522d; /* Hover to sienna */
+}
+
+article img {
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Sidebar */
+aside {
+    flex: 0 1 30%; /* Takes 30% of the width */
+    padding-left: 20px;
+}
+
+aside section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+aside h2, 
+aside h4 {
+    margin-top: 0;
+    color: #8b4513;
+}
+
+aside nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside nav ul li {
+    margin-bottom: 10px;
+}
+
+aside nav ul li a {
+    color: #5d4037;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+aside nav ul li a:hover {
+    color: #d2691e;
+}
+
+/* Footer */
+footer {
+    background-color: #8b4513; /* Dark brown footer background */
+    color: #f5f5dc; /* Light beige text */
+    padding: 20px;
+    text-align: center;
+}
+
+footer h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    margin-bottom: 10px;
+}
+
+footer nav ul li a {
+    color: #f5f5dc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer nav ul li a:hover {
+    color: #d2b48c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        flex: 1;
+        padding: 0;
+        margin-top: 20px;
+    }
+    
+    footer section {
+        flex-direction: column;
+    }
+}
